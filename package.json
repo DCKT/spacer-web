@@ -1,0 +1,31 @@
+{
+  "name": "@dck/spacer-web",
+  "description":
+    "An utility component for pushing other elements and avoid `padding`, `margin` for the web",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/Spacer.bs.js",
+  "keywords": [
+    "ReasonML",
+    "web",
+    "utils",
+    "react",
+    "reason-react",
+    "BuckleScript"
+  ],
+  "author": "Thomas Deconinck",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "reason-react": "0.7.0"
+  },
+  "devDependencies": {
+    "bs-platform": "5.0.6"
+  }
+}
