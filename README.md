@@ -30,11 +30,10 @@ const App = () => {
 
 Add the module to your `bsconfig.json` file :
 
-```
-"bs-dependencies": [
-  ...,
-  "@dck/spacer-native"
-]
+```json
+{
+  "bs-dependencies": ["@dck/spacer-web"]
+}
 ```
 
 Use it in your app code :
@@ -42,10 +41,10 @@ Use it in your app code :
 ```reason
 [@react.component]
 let make = () => {  
-  <>
-    <Text>{"Hello" |> React.string}</Text>
+  <div>
+    <h1>{"Hello" |> React.string}</h1>
     <Spacer height=10 />
-    <Text>{"World" |> React.string}</Text>
-  </>
+    <p>{"World" |> React.string}</p>
+  </div>
 };
 ```
